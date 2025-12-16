@@ -1,0 +1,58 @@
+# Environment variables
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+backend/venv/
+*.egg-info/
+dist/
+build/
+
+# ML Models
+backend/models/saved_models/*.pkl
+backend/models/saved_models/*.h5
+backend/models/saved_models/*.joblib
+!backend/models/saved_models/.gitkeep
+
+# Data
+backend/data/raw/*.csv
+backend/data/processed/*.csv
+backend/data/cache/*.pkl
+!backend/data/raw/.gitkeep
+!backend/data/processed/.gitkeep
+!backend/data/cache/.gitkeep
+
+# Logs
+*.log
+backend/logs/*.log
+!backend/logs/.gitkeep
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+Thumbs.db
